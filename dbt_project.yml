@@ -34,3 +34,13 @@ models:
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view
+
+    bronze_airbnb:
+      +schema:  bronze_airbnb
+      +materialized: table
+      +secured: False
+    Silver_airbnb:
+      +schema: Silver_airbnb
+      +materialized: table
+      +secured: False
+  

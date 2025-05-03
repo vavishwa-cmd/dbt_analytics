@@ -1,7 +1,7 @@
 with Src_Listings as(
     select *
     from
-    DBT_DEV.BRONZE_AIRBNB.SRC_LISTINGS
+    {{source('DEV_DBT','listings')}}
 )
 
 SELECT
